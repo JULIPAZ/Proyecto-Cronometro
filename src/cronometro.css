@@ -1,0 +1,88 @@
+/* Fondo general con degradado */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4a148c, #6a1b9a);
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal del cronómetro */
+.cronometro-container {
+  text-align: center;
+  color: white;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 300px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Título del cronómetro */
+.cronometro-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilo del círculo del cronómetro */
+.cronometro-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid #E91E63;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+/* Estilo del tiempo en el cronómetro */
+.cronometro-time {
+  font-size: 28px;
+  color: #E91E63;
+}
+
+/* Contenedor de botones */
+.cronometro-button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+/* Estilo de los botones */
+.cronometro-button {
+  background-color: #E91E63;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 10px ;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 100px; /* Ampliamos el ancho mínimo */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cronometro-button:hover {
+  background-color: #d81b60;
+  transform: scale(1.05);
+}
+.cronometro-button:focus {
+  outline: none;
+}
+
+/* Contenedor de la lista de vueltas */
+.cronometro-lap-container {
+  margin-top: 20px;
+}
+
+.cronometro-lap-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cronometro-lap-item {
+  font-size: 20px;
+}
+
